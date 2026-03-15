@@ -871,7 +871,7 @@ footer {
 <nav>
   <a href="#" class="nav-brand">Zehraan's Bookshelf</a>
   <div class="nav-right">
-    <div class="nav-stat"><strong id="navCount">57</strong> Books</div>
+    <div class="nav-stat"><strong id="navCount">62</strong> Books</div>
     <div class="nav-stat">Free Access</div>
   </div>
 </nav>
@@ -909,7 +909,7 @@ footer {
 <!-- STATS -->
 <div class="stats-row">
   <div class="stat-box">
-    <span class="stat-num" id="statN">57</span>
+    <span class="stat-num" id="statN">62</span>
     <span class="stat-lbl">Total Books</span>
   </div>
   <div class="stat-box">
@@ -1088,7 +1088,7 @@ footer {
         <div class="modal-divider"></div>
         <div class="modal-desc"  id="m-desc"></div>
         <div class="modal-actions">
-          <a id="m-link" href="#" target="_blank" rel="noopener" class="m-open">📖 Open PDF</a>
+          <a id="m-link" href="#" target="_blank" rel="noopener" class="m-open">📖 Open</a>
           <button class="m-close" onclick="closeM()">Close</button>
         </div>
       </div>
@@ -1183,9 +1183,28 @@ const BOOKS = [
    d:'A clear and concise Urdu translation and commentary of the entire Quran — all in one volume. The most widely read Tafseer in Pakistan, known for its simplicity and depth.',
    u:'https://archive.org/details/AhsanulBayan'},
   {id:7,cat:'islamic',ico:'☽',th:'c-is',t:'Sahih Muslim',a:'Imam Muslim',g:['Hadith','Classic'],
-   gq:'Sahih Muslim hadith book authentic collection',isbn:'9789960897034',
    d:'The second most authentic collection of Hadith in Islam. Every narration is strictly verified. An essential reference for every scholar and student of Islamic knowledge.',
    u:'https://archive.org/details/SahihMuslimByImamMuslim'},
+
+  {id:58,cat:'islamic',ico:'✦',th:'c-is',t:'Ayyuhal Walad',a:'Imam Al-Ghazali',g:['Tasawwuf','Roman Urdu'],
+   d:'A letter from Imam Ghazali to his beloved student — on what knowledge truly benefits, how to walk the spiritual path and what it means to be a sincere seeker of God. Short, profound and life-changing.',
+   u:'https://archive.org/details/AyyuhalWaladByImamAbuHaamidMuhammadAlGhazaliOhMyChild'},
+
+  {id:59,cat:'islamic',ico:'✦',th:'c-is',t:'Bidayatul Hidayah',a:'Imam Al-Ghazali',g:['Tasawwuf','Urdu'],
+   d:'The Beginning of Guidance — Imam Ghazali\'s concise manual for daily spiritual practice. Covers obedience, avoiding sin and the etiquette of companionship with God and His creation. A perfect starting point.',
+   u:'https://archive.org/details/BidayatAl-hidayaturduTranslationByImamGhazali'},
+
+  {id:60,cat:'islamic',ico:'✦',th:'c-is',t:'Nasihat ul Muluk',a:'Imam Al-Ghazali',g:['Islamic Wisdom','Urdu'],
+   d:'Counsel for Kings — Imam Ghazali\'s advice to rulers, ministers and leaders on how to govern with justice, wisdom and God-consciousness. Timeless guidance for anyone in a position of authority.',
+   u:'https://archive.org/details/MajmuaRasailOrCollectionOfShortBooksVolumes1-2-3InUrduByImamGhazali'},
+
+  {id:61,cat:'islamic',ico:'✦',th:'c-is',t:"Al-Arba'in fi Usul ud-Din",a:'Imam Al-Ghazali',g:['Aqeedah','Urdu'],
+   d:'The Forty Principles of Religion — a brilliant distillation of Imam Ghazali\'s masterpiece Ihya Ulum al-Din. Covers the forty essential foundations of Islamic belief and practice in a concise and accessible form.',
+   u:'https://archive.org/details/Tableegh-e-DeenByShaykhImamMuhammadGhazalir.a'},
+
+  {id:62,cat:'islamic',ico:'✦',th:'c-is',t:'Al-Munqidh min al-Dalal',a:'Imam Al-Ghazali',g:['Autobiography','Urdu'],
+   d:'Deliverance from Error — the spiritual autobiography of Imam Ghazali. He describes his personal journey through doubt, philosophy, theology and Sufism until he found true certainty. One of the most honest books ever written.',
+   u:'https://archive.org/details/AlGhazaliMunkidhMinAlDalalDeliveranceFromError'},
   // CLASSIC
   {id:8,cat:'classic',ico:'🌹',th:'c-cl',t:'The Little Prince',a:'Antoine de Saint-Exupéry',g:['Fable','French Classic'],
    gq:'The Little Prince Antoine de Saint-Exupery book',isbn:'0156013983',
@@ -1413,6 +1432,11 @@ const COVERS = {
   5:  AI+'KhalidBinAl-waleedSwordOfAllah.pdf',
   6:  AI+'AhsanulBayan',
   7:  AI+'SahihMuslimByImamMuslim',
+  58: AI+'AyyuhalWaladByImamAbuHaamidMuhammadAlGhazaliOhMyChild',
+  59: AI+'BidayatAl-hidayaturduTranslationByImamGhazali',
+  60: AI+'MajmuaRasailOrCollectionOfShortBooksVolumes1-2-3InUrduByImamGhazali',
+  61: AI+'Tableegh-e-DeenByShaykhImamMuhammadGhazalir.a',
+  62: AI+'AlGhazaliMunkidhMinAlDalalDeliveranceFromError',
   57: OL+'0140449154-L.jpg',
   // CLASSIC
   8:  OL+'0156013983-L.jpg',
@@ -1498,7 +1522,7 @@ BOOKS.forEach((b,i) => {
           <div class="b-title">${b.t}</div>
           <div class="b-auth">${b.a}</div>
           <div class="b-tags">${tags}</div>
-          <button class="b-btn">📖 Read PDF</button>
+          <button class="b-btn">📖 Read</button>
         </div>
       </div>
     </div>`);
