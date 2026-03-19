@@ -871,7 +871,7 @@ footer {
 <nav>
   <a href="#" class="nav-brand">Zehraan's Bookshelf</a>
   <div class="nav-right">
-    <div class="nav-stat"><strong id="navCount">62</strong> Books</div>
+    <div class="nav-stat"><strong id="navCount">65</strong> Books</div>
     <div class="nav-stat">Free Access</div>
   </div>
 </nav>
@@ -909,7 +909,7 @@ footer {
 <!-- STATS -->
 <div class="stats-row">
   <div class="stat-box">
-    <span class="stat-num" id="statN">62</span>
+    <span class="stat-num" id="statN">65</span>
     <span class="stat-lbl">Total Books</span>
   </div>
   <div class="stat-box">
@@ -1182,9 +1182,21 @@ const BOOKS = [
    gq:'Quran Tafsir translation Ahsanul Bayan Urdu',isbn:'9789960740737',
    d:'A clear and concise Urdu translation and commentary of the entire Quran — all in one volume. The most widely read Tafseer in Pakistan, known for its simplicity and depth.',
    u:'https://archive.org/details/AhsanulBayan'},
-  {id:7,cat:'islamic',ico:'☽',th:'c-is',t:'Sahih Muslim',a:'Imam Muslim',g:['Hadith','Classic'],
-   d:'The second most authentic collection of Hadith in Islam. Every narration is strictly verified. An essential reference for every scholar and student of Islamic knowledge.',
-   u:'https://archive.org/details/SahihMuslimByImamMuslim'},
+  {id:7,cat:'islamic',ico:'☽',th:'c-is',t:'Sahih Muslim (Urdu — 3 Vols)',a:'Imam Muslim',g:['Hadith','Urdu'],
+   d:'The second most authentic Hadith collection in Islam — complete 3-volume Urdu translation by Shaykh Muhammad Abdullah. Every narration strictly verified. An essential reference for every scholar and student.',
+   u:'https://archive.org/details/SahihMuslim-3Volumes-UrduTranslationByShaykhMuhammadAbdullah'},
+
+  {id:63,cat:'islamic',ico:'📿',th:'c-is',t:'Fazail-e-Amal',a:'Maulana Muhammad Zakariyya Kandhlawi',g:['Tasawwuf','Urdu','Tabligh'],
+   d:'The Virtues of Good Deeds — the most widely read Islamic book after the Quran and Sihah Sitta. Covers virtues of Salah, Quran, Dhikr, Tabligh and Ramadan. Used by millions in Tablighi Jamaat worldwide.',
+   u:'https://archive.org/details/fazail-e-aamal-urdu'},
+
+  {id:64,cat:'islamic',ico:'📚',th:'c-is',t:'Maarif-ul-Quran (8 Volumes)',a:'Mufti Muhammad Shafi Usmani',g:['Tafseer','Urdu','8 Volumes'],
+   d:'The most comprehensive and authoritative Urdu Tafseer of the Quran in 8 volumes — by the former Grand Mufti of Darul Uloom Deoband. A lifetime\'s worth of Quranic wisdom in one place.',
+   u:'https://archive.org/details/maarif-ul-quran-8volumes'},
+
+  {id:65,cat:'islamic',ico:'🌹',th:'c-is',t:'Bahishti Zewar',a:'Maulana Ashraf Ali Thanvi',g:['Fiqh','Urdu','Islamic Living'],
+   d:'Heavenly Ornaments — Maulana Ashraf Ali Thanvi\'s encyclopaedic guide to Islamic living. Covers worship, character, social dealings, women\'s fiqh and much more. One of the most influential Islamic books in South Asia.',
+   u:'https://archive.org/details/bahishti-zewar-urdu-completedeobandi'},
 
   {id:58,cat:'islamic',ico:'✦',th:'c-is',t:'Ayyuhal Walad',a:'Imam Al-Ghazali',g:['Tasawwuf','Roman Urdu'],
    d:'A letter from Imam Ghazali to his beloved student — on what knowledge truly benefits, how to walk the spiritual path and what it means to be a sincere seeker of God. Short, profound and life-changing.',
@@ -1431,7 +1443,10 @@ const COVERS = {
   4:  AI+'HayatUsSahabah-english-ByShaykhMuhammadYusufKandhelvir.a',
   5:  AI+'KhalidBinAl-waleedSwordOfAllah.pdf',
   6:  AI+'AhsanulBayan',
-  7:  AI+'SahihMuslimByImamMuslim',
+  7:  AI+'SahihMuslim-3Volumes-UrduTranslationByShaykhMuhammadAbdullah',
+  63: AI+'fazail-e-aamal-urdu',
+  64: AI+'maarif-ul-quran-8volumes',
+  65: AI+'bahishti-zewar-urdu-completedeobandi',
   58: AI+'AyyuhalWaladByImamAbuHaamidMuhammadAlGhazaliOhMyChild',
   59: AI+'BidayatAl-hidayaturduTranslationByImamGhazali',
   60: AI+'MajmuaRasailOrCollectionOfShortBooksVolumes1-2-3InUrduByImamGhazali',
